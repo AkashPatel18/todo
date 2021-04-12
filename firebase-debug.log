@@ -1,0 +1,51 @@
+[debug] [2021-04-12T13:24:28.727Z] ----------------------------------------------------------------------
+[debug] [2021-04-12T13:24:28.730Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\akash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-12T13:24:28.730Z] CLI Version:   9.9.0
+[debug] [2021-04-12T13:24:28.731Z] Platform:      win32
+[debug] [2021-04-12T13:24:28.731Z] Node Version:  v15.14.0
+[debug] [2021-04-12T13:24:28.732Z] Time:          Mon Apr 12 2021 18:54:28 GMT+0530 (India Standard Time)
+[debug] [2021-04-12T13:24:28.732Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-12T13:24:28.740Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-12T13:24:28.741Z] > authorizing via signed-in user (akashpatel18041999@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\akash\Desktop\react-firebase-todo-master
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using todoapp-f3b9a. 
+[debug] [2021-04-12T13:25:04.442Z] > refreshing access token with scopes: []
+[debug] [2021-04-12T13:25:04.442Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-12T13:25:04.894Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 12 Apr 2021 13:25:04 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-12T13:25:04.904Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-f3b9a [none]
+[debug] [2021-04-12T13:25:05.767Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-f3b9a 403
+[debug] [2021-04-12T13:25:05.767Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-f3b9a {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-04-12T13:25:05.767Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-04-12T13:25:06.140Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\akash\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\akash\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+    at async Client.request (C:\Users\akash\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\akash\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\akash\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\akash\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project todoapp-f3b9a. Please make sure the project exists and your account has permission to access it.
